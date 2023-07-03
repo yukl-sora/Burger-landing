@@ -28,9 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 /* header */
 
 .container {
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .btn {
@@ -149,4 +150,138 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     opacity: 0.7;
     padding: 0 20px 35px;
+}
+
+/** Orders **/
+
+.order {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+
+.order__header {
+    margin-bottom: 25px;
+    font-size: 44px;
+}
+
+.burger {
+    max-width: 470px;
+}
+
+.order__text {
+    max-width: 360px;
+}
+
+.order__description {
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.order__price {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+}
+
+.order__off-price {
+    font-weight: 500;
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+    text-decoration: line-through;
+}
+
+.order__price + .order__off-price {
+    margin-left: 3px;
+}
+
+.order .btn {
+    margin-top: 10px;
+}
+
+.order .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+/** Product cards **/
+
+.product .container {
+    padding: 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product__card {
+    width: 555px;
+    height: 320px;
+    border-radius: 15px;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px 60px 340px;
+    box-sizing: border-box;
+}
+
+.product__card:nth-child(even) {
+    padding-right: 340px;
+    padding-left: 30px;
+}
+
+.product__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product__description {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.product__price {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+}
+
+.product__off-price {
+    font-weight: 500;
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+    text-decoration: line-through;
+}
+
+.product__price + .product__off-price {
+    margin-left: 5px;
+}
+
+.btn--small {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.product .btn {
+    margin-top: 10px;
+}
+
+.card-queen {
+    background-image: url(../source/coffee.jpg);
+}
+
+.card-hut {
+    background-image: url(../source/pizza.jpg);
+}
+
+.card-king {
+    background-image: url(../source/burger.jpg);
+}
+
+.card-john {
+    background-image: url(../source/shaverma.jpg);
 }
